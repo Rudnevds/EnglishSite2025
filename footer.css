@@ -1,0 +1,110 @@
+.footer{
+    background: linear-gradient(135deg, #004d00, #006400);
+    color:#ffffff;
+    padding: 60px 0 20px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background:linear-gradient(90deg, #ffffff, #00ff00, #ffffff);
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section{
+    flex:1;
+    margin-bottom: 30px;
+    min-width: 250px;
+    /* opacity: 0; */
+    animation: fadeInUp 0.6s ease forwards;
+    transition: transform 0.3s ease;
+}
+
+.footer-section:hover{
+    transform: translateY(-5px);
+}
+
+.footer-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+}
+
+.footer-section h3::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #00ff00;
+}
+
+.about p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color:#e0e0e0;
+}
+
+.contact-info a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-bottom: 2vh;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.contact-info p:hover {
+    color:#00ff00;
+    transform: translateY(-2px);
+}
+
+.contact-info i {
+    color:#fff;
+}
+
+
+.team-member{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.1);
+}
+
+.team-member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #00ff00;
+}
+
